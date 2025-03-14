@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гостиница «Морской бриз»</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Гостиница «Морской бриз»</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Номера</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <header class="bg-light text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Добро пожаловать в гостиницу «Морской бриз»</h1>
+        <p class="lead">Ваш идеальный отдых на берегу Черного моря</p>
+        <a href="#rooms" class="btn btn-primary btn-lg">Наши номера</a>
+      </div>
+    </header>
+
+    <!-- О нас -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">О нас</h2>
+        <p class="text-center">
+          Гостиница «Морской бриз» расположена в живописном месте на берегу
+          Черного моря. Мы предлагаем комфортабельные номера, ресторан с
+          изысканной кухней, бассейн и множество дополнительных услуг для вашего
+          отдыха.
+        </p>
+      </div>
+    </section>
+
+    <!-- Номера -->
+    <section id="rooms" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Наши номера</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/room1.jpg"
+                class="card-img-top"
+                alt="Стандартный номер"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Стандартный номер</h5>
+                <p class="card-text">
+                  Уютный номер с видом на сад. В номере: двуспальная кровать,
+                  телевизор, мини-бар, ванная комната.
+                </p>
+                <p class="card-text">
+                  <strong>Цена: от 3000 руб./сутки</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img src="images/room2.jpg" class="card-img-top" alt="Люкс" />
+              <div class="card-body">
+                <h5 class="card-title">Люкс</h5>
+                <p class="card-text">
+                  Просторный номер с видом на море. В номере: двуспальная
+                  кровать, диван, телевизор, мини-бар, ванная комната с джакузи.
+                </p>
+                <p class="card-text">
+                  <strong>Цена: от 6000 руб./сутки</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Наши услуги</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <i class="fas fa-utensils fa-3x mb-3"></i>
+            <h5>Ресторан</h5>
+            <p>Блюда европейской и крымской кухни.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-swimmer fa-3x mb-3"></i>
+            <h5>Бассейн</h5>
+            <p>Крытый бассейн с подогревом.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-spa fa-3x mb-3"></i>
+            <h5>Спа</h5>
+            <p>Массаж, сауна и косметические процедуры.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Галерея</h2>
+        <div class="gallery-slider">
+          <div class="slider">
+            <img
+              src="images/gallery1.jpg"
+              alt="Фото 1"
+              class="slider-img active"
+            />
+            <img src="images/gallery2.jpg" alt="Фото 2" class="slider-img" />
+            <img src="images/gallery3.jpg" alt="Фото 3" class="slider-img" />
+          </div>
+          <button class="slider-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <!-- Контакты -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Контакты</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Адрес: Крым, г. Ялта, ул.
+              Морская, д. 10
+            </p>
+            <p><i class="fas fa-phone"></i> Телефон: +7 (978) 123-45-67</p>
+            <p>
+              <i class="fas fa-envelope"></i> Email: info@hotel-morskoy-briz.ru
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Обновленный iframe с картой -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.123456789012!2d34.1600!3d44.4900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDI5JzI0LjQiTiAzNMKwMDknMzYuMCJF!5e0!3m2!1sru!2sru!4v1631234567890!5m2!1sru!2sru"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Гостиница «Морской бриз». Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

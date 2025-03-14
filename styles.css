@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #343a40 !important;
+}
+
+header {
+  background: url("images/header.jpg") no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Слайдер */
+.gallery-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-img {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slider-img.active {
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Общие стили для изображений */
+img {
+  width: 100%; /* Ширина 100% от родительского контейнера */
+  height: 300px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+  border-radius: 10px; /* Закругленные углы */
+}
+
+/* Стили для карточек с номерами */
+.card img {
+  height: 200px; /* Меньшая высота для карточек */
+}
+
+/* Стили для слайдера */
+.slider-img {
+  height: 400px; /* Большая высота для слайдера */
+}
